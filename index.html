@@ -8,7 +8,8 @@
   <title>Vet clinic</title>
 
   <link rel="stylesheet" href="css/normalize.mini.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- <link rel="stylesheet" href="css/styles.css"> -->
+  <link rel="stylesheet" href="css/styles.mini.css">
 
 </head>
 
@@ -60,7 +61,7 @@
           <div class="hero__content">
             <h1 class="hero__heading">Мы заботимся о <span>ваших питомцах!</span></h1>
             <p class="hero__desc">Вам и Вашему любимцу множество услуг по диагностике, профилактике заболеваний по лечению и уходу за Вашими животными. Профессионалы работающие в нашей клинике сделают все для того, чтобы быстро, эффективно и максимально безболезненно выполнить любие процедуры, которые необходимы Вашему домашнему любимцу.</p>
-            <a class="button hero__button" href="#">Наши услуги</a>
+            <a class="button hero__button" href="#services-id">Наши услуги</a>
           </div>
         </div>
       </section>
@@ -79,7 +80,7 @@
 
       <!-- SERVICES  -->
 
-      <section class="services">
+      <section class="services" id="services-id">
         <div class="container services__container">
           <h1 class="visually-hidden">Услуги ветеринарная клиника</h1>
           <h2 class="services__heading">Наши услуги</h2>
@@ -177,7 +178,7 @@
                   <p class="services__info-desc">По условиям акции в нашей клинике предоставляетса безплатная услуга “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.</p>
                   <div class="services__info--button-box">
                     <a class="button services__info--button info--button-yellow" href="#">Узнать цену</a>
-                    <a class="button services__info--button info--button-black" href="#">Записаться на приём</a>
+                    <a class="button services__info--button info--button-black" href="#form-section-id">Записаться на приём</a>
                   </div>
                 </div>
               </li>
@@ -261,7 +262,7 @@
           </div>
         </section>
 
-        <section class="form-section">
+        <section class="form-section" id="form-section-id">
           <h2 class="visually-hidden">Ветеринарная клиника Обратная связь</h2>
           <div class="container form-section__container">
             <div class="form__map" style="position:relative;overflow:hidden;"><a href="https://yandex.uz/maps/org/najot_ta_lim/206616411269/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Najot Ta'lim</a><a href="https://yandex.uz/maps/10335/tashkent/category/educational_center/184106168/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Учебный центр в Ташкенте</a><iframe class="map" src="https://yandex.uz/map-widget/v1/-/CCU4NDwq9B" width="462" height="700" allowfullscreen style="position:relative;"></iframe>
@@ -279,7 +280,7 @@
 
                   <textarea class="field textarea-field" name="questions" id="questions-input" rows="10" placeholder="Опишите Ваш вопрос." spellcheck="false"></textarea>
 
-                  <button class="button online__button" type="submit">Задать нам вопрос</button>
+                  <button class="button form__button" type="submit">Задать нам вопрос</button>
 
                 </div>
               </form>

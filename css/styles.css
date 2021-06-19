@@ -48,6 +48,7 @@
 html {
   box-sizing: border-box;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -505,6 +506,7 @@ img {
   margin-left: 35px;
   overflow-x: hidden;
 }
+
 .button-list{
   display: flex;
   align-items: center;
@@ -974,7 +976,7 @@ input{
   margin-bottom: 14px;
 }
 
-.online__button{
+.form__button{
   background-color: var(--color-yellow);
   color: var(--color-white);
   margin-top: 30px;
