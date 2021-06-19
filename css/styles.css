@@ -101,13 +101,13 @@ img {
 .heared__top{
   padding-top: 11px;
   padding-bottom: 13px;
-    background-color: #F9F8F8;
+  background-color: #F9F8F8;
 }
 .site-header__container{
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  }
+}
 
 .heared__top-address{
   font-style: normal;
@@ -254,7 +254,7 @@ img {
   display: block;
 }
 .site-nav {
-width: 800px;
+  width: 800px;
 }
 .site-nav__list {
   list-style: none;
@@ -266,8 +266,8 @@ width: 800px;
   flex-wrap: wrap;
 }
 .site-nav__item {
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
 .site-nav__item:not(:last-child){
   margin-right: 43px;
@@ -301,14 +301,14 @@ align-items: center;
   opacity: 0.4;
 }
 .site-nav__link::after{
-position: absolute;
-z-index: -1;
-display: none;
-bottom: 4px;
-content: "";
-width: 100%;
-height: 4px;
-background-color: #f4ffad;
+  position: absolute;
+  z-index: -1;
+  display: none;
+  bottom: 4px;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: #f4ffad;
 }
 .site-nav__link:hover::after{
   display: block;
@@ -380,9 +380,9 @@ background-color: #f4ffad;
   width: 495px;
   margin: 0;
   font-size: 16px;
-line-height: 21px;
-color: var(--color-grey);
-margin-bottom: 38px;
+  line-height: 21px;
+  color: var(--color-grey);
+  margin-bottom: 38px;
 }
 .button {
   padding: 15px 48px;
@@ -390,6 +390,269 @@ margin-bottom: 38px;
   color: var(--color-white);
   background-color: var(--color-black);
   text-decoration: none;
+  transition: opacity 0.3s ease;
 }
-.hero__button {
+.button:hover{
+  opacity: 0.7;
+}
+.button:active{
+  opacity: 0.4;
+}
+
+
+/* blockquote */
+.blockquote-section{
+  padding-top: 185px;
+  padding-bottom: 145px;
+}
+.blockquote-section__content{
+  width: 753px;
+  margin: 0;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: var(--color-grey);
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  z-index: 1;
+}
+.blockquote__box::before{
+  content: "";
+  display: block;
+  width: 140px;
+  height: 1px;
+  background-color: #DBDBDB;
+  margin-bottom: 43px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.blockquote__box::after{
+  content: "";
+  display: block;
+  width: 140px;
+  height: 1px;
+  background-color: #DBDBDB;
+  margin-top: 35px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.blockquote-section__content::before{
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+width: 142px;
+height: 128px;
+background-image: url("../img/blockquote-left.svg");
+background-repeat: no-repeat;
+top: -30px;
+left: -100px;
+}
+.blockquote-section__content::after{
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+width: 142px;
+height: 128px;
+background-image: url("../img/blockquote-right.svg");
+background-repeat: no-repeat;
+top: 30px;
+right: -200px;
+}
+
+.blockquote-section__name{
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--color-black);
+  text-align: center;
+  margin-top: 35px;
+}
+
+/* SERVICES */
+.services {
+  padding-bottom: 50px;
+}
+
+.services__container {
+  position: relative;
+  z-index: 1;
+}
+
+.services__heading {
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 54px;
+  color: var(--color-black);
+  margin-bottom: 80px;
+}
+.services__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  margin-right: 35px;
+  margin-left: 35px;
+  overflow-x: hidden;
+}
+.button-list{
+  display: flex;
+  align-items: center;
+}
+
+.services__arrows {
+  display: block;
+  position: absolute;
+  padding: 20px;
+  width: 50;
+  height: 50px;
+  border: none;
+  background-position: center center;
+  border-radius: 2px;
+  background-size: 14px 26px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.arrows-left{
+  left: -15px;
+  background-image: url("../img/arrow-left.svg");
+
+}
+.arrows-right{
+  right: -15px;
+  background-image: url("../img/arrow-right.svg");
+
+}
+.services__arrows:hover{
+  background-color: var(--color-white);
+}
+.services__arrows:active{
+  background-color: var(--color-white);
+  opacity: 0.7;
+}
+
+
+.services__item {
+width: 200px;
+background-color: var(--color-white);
+border-radius: 5px;
+display: flex;
+align-items: center;
+flex-direction: column;
+flex-shrink: 0;
+}
+.services__item:not(:last-child){
+  margin-right: 13px;
+}
+
+.services__link {
+text-decoration: none;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 30px 32px;
+transition: opacity 0.3s ease;
+}
+.services__link:hover{
+  opacity: 0.7;
+}
+.services__link:active{
+  opacity: 0.4;
+}
+
+.services__link::before{
+  content: "";
+  display: block;
+  background-image: url("../img/doctor.svg");
+  background-repeat: no-repeat;
+width: 54px;
+height: 77px;
+margin-bottom: 22px;
+}
+
+.link--womandoctor::before{
+ background-image: url("../img/woman-doctor.svg");
+ width: 61px;
+ height: 76px;
+}
+
+.link--hirurgiya::before{
+  background-image: url("../img/dog-surgeon.svg");
+  width: 72px;
+  height: 77px;
+ }
+.link--dermotologiya::before{
+  background-image: url("../img/dermotologiya.svg");
+  width: 76px;
+  height: 76px;
+ }
+
+.link--laboratoriya::before{
+  background-image: url("../img/laboratory.svg");
+  width: 78px;
+  height: 78px;
+ }
+
+.link--oftalmologiya::before{
+  background-image: url("../img/oftalmologiya.svg");
+  width: 76px;
+  height: 76px;
+ }
+
+ .link--uzi::before{
+  background-image: url("../img/uzi.svg");
+  width: 77px;
+  height: 77px;
+ }
+
+ .link--chip::before{
+  background-image: url("../img/chipirovaniya.svg");
+  width: 40px;
+  height: 77px;
+ }
+
+.link--mejdpassport::before{
+  background-image: url("../img/mejdu-passport.svg");
+  width: 86px;
+  height: 78px;
+ }
+
+.link--vakcina::before{
+  background-image: url("../img/vaksinasiya.svg");
+  width: 68px;
+  height: 76px;
+ }
+
+.link--stom::before{
+  background-image: url("../img/stomotologiya.svg");
+  width: 78px;
+  height: 78px;
+ }
+
+ .link--callhome::before{
+  background-image: url("../img/call-to-home.svg");
+  width: 77px;
+  height: 77px;
+ }
+
+
+.services__desc{
+margin: 0;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+color: var(--color-black);
 }
