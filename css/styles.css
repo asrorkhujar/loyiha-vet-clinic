@@ -1056,7 +1056,12 @@ input{
 
 
 .icon-date::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
   background-image: url("../img/schedule.svg");
+  margin-right: 14px;
 }
 
 
