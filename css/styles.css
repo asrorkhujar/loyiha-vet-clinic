@@ -1,0 +1,217 @@
+@font-face {
+  font-family: "FuturaPT";
+  src: url("../fonts/FuturaPT-Bold.woff2") format("woff2"),
+  url("../fonts/FuturaPT-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FuturaPT";
+  src: url("../fonts/FuturaPT-Book.woff2") format("woff2"),
+  url("../fonts/FuturaPT-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FuturaPT";
+  src: url("../fonts/FuturaPT-Light.woff2") format("woff2"),
+  url("../fonts/FuturaPT-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FuturaPT";
+  src: url("../fonts/FuturaPT-Medium.woff2") format("woff2"),
+  url("../fonts/FuturaPT-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+:root{
+  --color-white:#fff;
+  --color-black:#333;
+  --color-yellow:#FFBD54;
+  --color-grey:#949494;
+  --color-blue:#3D9CEA;
+  --color-icon-blue:#78C0DE;
+
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1330px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "FuturaPT", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #F9F9F9;
+  background-image: url("../img/bg.png");
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* HEADER-TOP */
+.heared__top{
+  padding-top: 11px;
+  padding-bottom: 13px;
+  display: flex;
+  align-items: center;
+  background-color: #F9F8F8;
+  justify-content: flex-end;
+}
+
+.heared__top-address{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-black);
+  display: flex;
+  align-items: center;
+  margin-right: 106px;
+}
+.heared__top-address::before{
+  content: "";
+  display: block;
+  width: 14px;
+  height: 13px;
+  background-image: url("../img/icon-home.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 9px;
+}
+
+.header__top-phone{
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-black);
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease,
+  opacity 0.3s ease;
+}
+.header__top-phone:hover{
+  color: var(--color-yellow);
+}
+.header__top-phone:active{
+  color: var(--color-yellow);
+  opacity: 0.4;
+}
+
+
+.header__top-phone:not(:last-child){
+  margin-right: 9px;
+}
+
+.phone-first::before{
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 9px;
+}
+.phone-second::before{
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: var(--color-yellow);
+  border-radius: 50%;
+  margin-right: 9px;
+}
+.phone-second::after{
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: var(--color-yellow);
+  border-radius: 50%;
+  margin-left: 9px;
+}
+
+.heared__top-date{
+  display: flex;
+  align-items: center;
+}
+.heared__top-date ~ .heared__top-date{
+  margin-left: 17px;
+}
+.heared__top-date b{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-black);
+  margin-right: 3px;
+}
+
+.heared__top-date span{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-black);
+}
+.date-first::before{
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  background-image: url("../img/schedule.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 9px;
+  margin-left: 98px;
+}
