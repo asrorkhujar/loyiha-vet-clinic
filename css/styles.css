@@ -390,6 +390,8 @@ img {
   color: var(--color-white);
   background-color: var(--color-black);
   text-decoration: none;
+  border: 1px solid transparent;
+  cursor: pointer;
   transition: opacity 0.3s ease;
 }
 .button:hover{
@@ -475,7 +477,7 @@ right: -200px;
 
 /* SERVICES */
 .services {
-  padding-bottom: 50px;
+  padding-bottom: 235px;
 }
 
 .services__container {
@@ -655,4 +657,137 @@ font-size: 18px;
 line-height: 22px;
 text-align: center;
 color: var(--color-black);
+}
+
+/* services__info-list */
+
+.services__info-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding: 42px 35px;
+  background-color: var(--color-white);
+  margin-right: 35px;
+  margin-left: 35px;
+  margin-top: 14px;
+}
+
+.services__info-item{
+  display: flex;
+  align-items: center;
+}
+.services__info-content{
+  margin-left: 67px;
+}
+
+.services__info-desc{
+  margin: 0;
+  width: 492px;
+color: var(--color-grey);
+margin-bottom: 9px;
+}
+
+.services__info--button-box{
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.services__info--button ~ .services__info--button{
+  margin-left: 21px;
+}
+
+.info--button-yellow{
+background-color: var(--color-yellow);
+color: var(--color-white);
+display: flex;
+align-items: center;
+}
+.info--button-yellow::before{
+  content: "";
+  display: block;
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/money.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 7px;
+}
+
+.info--button-black{
+  display: flex;
+  align-items: center;
+}
+.info--button-black::before{
+  content: "";
+  display: block;
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/document.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 7px;
+}
+
+/* ONLINE */
+
+.online{
+  padding-top: 90px;
+  padding-bottom: 88px;
+  padding-left: 232px;
+  background-image: url("../img/form-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.online__title{
+  margin: 0;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 20px;
+  color: var(--color-white);
+  margin-bottom: 32px;
+}
+
+.input-box{
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.input-box::after{
+  content:"";
+  width: 613px;
+  height: 481px;
+  display: block;
+  background-image: url("../img/dog-grooming.png");
+  position: absolute;
+  background-size: 613px 481px;
+bottom: -153px;
+right: 200px;
+}
+
+.field{
+  width: 335px;
+margin-right: 21px;
+padding-top: 18px;
+padding-right: 21px;
+padding-bottom: 12px;
+padding-left: 22px;
+border-radius: 5px;
+border: 1px solid transparent;
+}
+
+::placeholder{
+  color: var(--color-grey);
+}
+input{
+  border: 2px solid transparent;
+}
+
+.field:not(:placeholder-shown):not(:focus):valid{
+  border-color: #90EE90;
+}
+.field:not(:placeholder-shown):not(:focus):invalid{
+  border-color: #FF6347;
 }
