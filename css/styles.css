@@ -250,10 +250,10 @@ img {
 }
 
 .header__logo-link:hover{
-  opacity: 0.7;
+  opacity: 0.8;
 }
 .header__logo-link:active{
-  opacity: 0.4;
+  opacity: 0.6;
 }
 .header__logo-img {
   display: block;
@@ -588,8 +588,8 @@ img {
   display: block;
   background-image: url("../img/doctor.svg");
   background-repeat: no-repeat;
-  width: 54px;
-  height: 77px;
+  width: 86px;
+  height: 78px;
   margin-bottom: 22px;
 }
 
@@ -667,6 +667,7 @@ img {
   text-align: center;
   color: var(--color-black);
 }
+
 
 /* services__info-list */
 
@@ -928,17 +929,19 @@ input{
 /* FORM */
 
 .form-section{
-  /* margin-right: auto;
-  margin-left: auto; */
+  width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
   padding-bottom: 247px;
+
 }
 .form-section__container{
-  width: 1440px;
   display: flex;
   align-items: center;
 }
 .form__map{
-  width: 462px;
+  width: 465px;
+  height: 100%;
 }
 .map{
   border: transparent;
@@ -948,7 +951,8 @@ input{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right center;
-  width: 978px;
+  width: 975px;
+  height: 100%;
   padding-top: 62px;
   padding-bottom: 74px;
   padding-left: 85px;
@@ -1010,6 +1014,16 @@ input{
   width: 158px;
   margin-right: 67px;
 }
+.footer__logo-link{
+  display: block;
+  transition: opacity 0.3s ease;
+}
+.footer__logo-link:hover{
+  opacity: 0.8;
+}
+.footer__logo-link:active{
+  opacity: 0.6;
+}
 
 .footer__list {
   margin: 0;
@@ -1020,6 +1034,9 @@ input{
 
 .footer__list-first{
   margin-right: 87px;
+}
+.footer__item{
+  transition: ;
 }
 
 .footer__item:not(:last-child) {
@@ -1075,6 +1092,7 @@ input{
 
 
 .footer__adress{
+  width: 157px;
   margin-right: 87px;
   margin-left: 112px;
   display: flex;
@@ -1126,3 +1144,141 @@ input{
   line-height: 18px;
   color: #5C5C5C;
 }
+
+/* SERVICES - page */
+
+.services-page__intro{
+  padding-top: 118px;
+  padding-bottom: 140px;
+  background-image: url("../img/services-intro-bg.png");
+background-repeat: no-repeat;
+background-position: calc(50% + 450px) -20px;
+}
+
+.intro-wrapper {
+width: 450px;
+margin-left: 116px;
+}
+.intro-heading {
+  margin: 0;
+  font-weight: bold;
+font-size: 70px;
+line-height: 64px;
+color: var(--color-black);
+margin-bottom: 21px;
+}
+.intro-info {
+  margin: 0;
+  color: var(--color-grey);
+}
+
+/* services-page__list-section */
+.services-page__list-section{
+  padding-bottom: 168px;
+}
+
+.list-section__list{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+  margin-left: -30px;
+  margin-top: -34px;
+  flex-wrap: wrap;
+}
+
+.list-section__item{
+  width: 305px;
+  border-radius: 5px 5px 0px 0px;
+padding: 58px 22px 45px 53px;
+background-color: var(--color-white);
+background-image: url("../img/pet-for-item.svg");
+background-repeat: no-repeat;
+background-position: right top;
+margin-right: 30px;
+margin-top: 34px;
+transition: .3s ease;
+}
+.list-section__item:hover{
+filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.2));
+
+}
+
+.list-section__item::before{
+  content: "";
+  display: block;
+  background-image: url("../img/doctor.svg");
+  background-repeat: no-repeat;
+  width: 86px;
+  height: 78px;
+  margin-bottom: 22px;
+}
+
+.item--womandoctor::before{
+  background-image: url("../img/woman-doctor.svg");
+}
+.item--hirurgiya::before{
+  background-image: url("../img/dog-surgeon.svg");
+}
+
+.item--dermotologiya::before{
+  background-image: url("../img/dermotologiya.svg");
+}
+.item--laboratoriya::before{
+  background-image: url("../img/laboratory.svg");
+}
+.item--oftalmologiya::before{
+  background-image: url("../img/oftalmologiya.svg");
+}
+.item--uzi::before{
+  background-image: url("../img/uzi.svg");
+}
+.item--chip::before{
+  background-image: url("../img/chipirovaniya.svg");
+}
+.item--mejdpassport::before{
+  background-image: url("../img/mejdu-passport.svg");
+}
+.item--vakcina::before{
+  background-image: url("../img/vaksinasiya.svg");
+}
+.item--stom::before{
+  background-image: url("../img/stomotologiya.svg");
+}
+.item--callhome::before{
+  background-image: url("../img/call-to-home.svg");
+}
+
+.list-section__list-title {
+  margin: 0;
+margin-bottom: 14px;
+font-weight: 600;
+font-size: 32px;
+line-height: 34px;
+color: var(--color-black);
+}
+.list-section__list-desc {
+  margin: 0;
+  margin-bottom: 26px;
+color: var(--color-grey);
+}
+.list-section__list-link {
+  display: inline-block;
+padding: 15px 30px;
+text-decoration: none;
+font-weight: 450;
+font-size: 16px;
+line-height: 21px;
+background-color: var(--color-yellow);
+color: var(--color-white);
+border-radius: 3px;
+transition: background-color .3s ease;
+}
+
+.list-section__list-link:hover{
+background-color: var(--color-black);
+}
+.list-link--blue{
+  background-color: var(--color-blue);
+}
+

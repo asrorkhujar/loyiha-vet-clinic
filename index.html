@@ -39,7 +39,7 @@
             <ul class="site-nav__list">
               <li class="site-nav__item site-nav__item--avtive"><a href="#" class="site-nav__link">Главная</a></li>
               <li class="site-nav__item"><a href="#" class="site-nav__link">О Клинике</a></li>
-              <li class="site-nav__item"><a href="#" class="site-nav__link">Наши Услуги</a></li>
+              <li class="site-nav__item"><a href="services.html" class="site-nav__link">Наши Услуги</a></li>
               <li class="site-nav__item"><a href="#" class="site-nav__link">Полезные Статьи</a></li>
               <li class="site-nav__item"><a href="#" class="site-nav__link">FAQ</a></li>
               <li class="site-nav__item"><a href="#" class="site-nav__link">Контакты</a></li>
@@ -266,7 +266,8 @@
 <!-- MAP-FORM -->
         <section class="form-section" id="form-section-id">
           <h2 class="visually-hidden">Ветеринарная клиника Обратная связь</h2>
-          <div class="container form-section__container">
+
+          <div class="form-section__container">
             <div class="form__map" style="position:relative;overflow:hidden;"><a href="https://yandex.uz/maps/org/najot_ta_lim/206616411269/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Najot Ta'lim</a><a href="https://yandex.uz/maps/10335/tashkent/category/educational_center/184106168/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Учебный центр в Ташкенте</a><iframe class="map" src="https://yandex.uz/map-widget/v1/-/CCU4NDwq9B" width="462" height="700" allowfullscreen style="position:relative;"></iframe>
             </div>
 
@@ -298,44 +299,50 @@
           <div class="footer__content-box">
 
             <div class="footer__logo-box">
-              <a class="footer__logo" href="index.html">
-                <img src="img/logo.svg" alt="logo of vet-clinic" width="158" height="77">
+              <a class="footer__logo-link" href="index.html">
+                <img class="header__logo-img" src="img/logo.svg" alt="logo of vet-clinic" width="158" height="77">
               </a>
             </div>
 
 
               <ul class="footer__list footer__list-first">
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Главная</a>
+                <li class="footer__item site-nav__item">
+                  <a class="footer__link site-nav__link" href="#">Главная</a>
                 </li>
                 <li class="footer__item">
-                  <a class="footer__link" href="#">О Клинике</a>
+                  <a class="footer__link site-nav__link" href="#">О Клинике</a>
                 </li>
                 <li class="footer__item">
-                  <a class="footer__link" href="#">Наши Услуги</a>
+                  <a class="footer__link site-nav__link" href="services.html">Наши Услуги</a>
                 </li>
               </ul>
 
 
               <ul class="footer__list">
                 <li class="footer__item">
-                  <a class="footer__link" href="#">Полезные Статьи</a>
+                  <a class="footer__link site-nav__link" href="#">Полезные Статьи</a>
                 </li>
                 <li class="footer__item">
-                  <a class="footer__link" href="#">FAQ</a>
+                  <a class="footer__link site-nav__link" href="#">FAQ</a>
                 </li>
                 <li class="footer__item">
-                  <a class="footer__link" href="#">Контакты</a>
+                  <a class="footer__link site-nav__link" href="#">Контакты</a>
                 </li>
               </ul>
 
 
             <div class="footer__date-box">
-              <span class="footer__date icon-date"><span>Пн - Пт </span> 8:00 - 18:00</span>
-              <span class="footer__date"><span>Сб - Вс </span> 8:00 - 14:00</span>
+              <div class="footer__date icon-date">
+                <span>Пн - Пт </span>
+                <time>8:00 - 18:00</time>
+              </div>
+              <div class="footer__date">
+                <span>Сб - Вс </span>
+                <time>8:00 - 14:00</time>
+              </div>
             </div>
 
-            <address class="footer__adress">г. Мариуполь, <br>  проспект Победы, 48а</address>
+            <address class="footer__adress">г. Мариуполь, проспект Победы, 48а</address>
             <div class="footer__phone-box">
               <ul class="footer__phone-list">
                 <li class="footer__phone-item">
