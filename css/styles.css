@@ -1172,7 +1172,7 @@ margin-bottom: 21px;
   color: var(--color-grey);
 }
 
-/* services-page__list-section */
+/* Services Page List-Section */
 .services-page__list-section{
   padding-bottom: 168px;
 }
@@ -1272,11 +1272,15 @@ line-height: 21px;
 background-color: var(--color-yellow);
 color: var(--color-white);
 border-radius: 3px;
-transition: background-color .3s ease;
+transition: background-color .3s ease,
+opacity 0.3s ease;
 }
 
 .list-section__list-link:hover{
 background-color: var(--color-black);
+}
+.list-section__list-link:active{
+opacity: 0.6;
 }
 .list-link--blue{
   background-color: var(--color-blue);
