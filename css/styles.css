@@ -1534,16 +1534,16 @@ line-height: 21px;
   border-radius: 5px;
 }
 
-.tab__col {
+.tab__qa {
   display: flex;
   align-items: center;
 }
 
-.tab__col--top {
+.tab__qa--top {
   margin-bottom: 9px;
 }
 
-.tab__col--bottom {
+.tab__qa--bottom {
   position: relative;
   z-index: 1;
   justify-content: space-between;
@@ -1621,8 +1621,9 @@ line-height: 21px;
   margin-top: 12px;
 }
 
-.tab__answer-text {
+.tab__answer-info {
   margin: 0;
+  color: var(--color-grey);
 }
 
 .tab--active .tab__answer {
