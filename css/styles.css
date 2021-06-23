@@ -1333,7 +1333,12 @@ input{
   z-index: 99;
   top: 45px;
   left: 30px;
-
+}
+.js-close-modal-button:hover{
+opacity: .8;
+}
+.js-close-modal-button:active{
+opacity: .4;
 }
 
 
@@ -1416,4 +1421,50 @@ input{
   background-color: var(--color-black);
   border-radius: 0;
   margin-top: 0;
+}
+
+/* FAQ */
+
+.faq {
+  padding-top: 110px;
+  padding-bottom: 270px;
+}
+
+.faq__container {
+}
+.faq__heading {
+  margin: 0;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 64px;
+  color: var(--color-black);
+margin-bottom: 27px;
+}
+.faq__desc {
+width: 447px;
+margin: 0;
+margin-bottom: 35px;
+color: var(--color-grey);
+}
+
+.faq__link {
+  /* min-width: 201px; */
+  display: inline-flex;
+  padding: 15px 38px 15px 38px;
+  white-space: nowrap;
+  background-color: var(--color-icon-blue);
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+}
+
+.faq__link::before {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 21px;
+  background-image: url(../img/document.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 6px;
 }
