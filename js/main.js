@@ -11,3 +11,12 @@ elCloseModalButton.addEventListener('click', function () {
 });
 
 
+// TAB
+
+var elsTabToggle = document.querySelectorAll('.tab__toggle');
+
+elsTabToggle.forEach(toggle => {
+  toggle.addEventListener('click', () => {
+    toggle.closest('.tab').classList.toggle('tab--active');
+  })
+})
