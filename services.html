@@ -43,7 +43,7 @@
           </nav>
 
           <div class="header__button">
-            <a href="#" class="site-nav__link header__ask-link">Задать вопрос</a>
+            <a href="#" class="site-nav__link header__ask-link js-modal--open">Задать вопрос</a>
           </div>
         </div>
       </div>
@@ -221,7 +221,36 @@
     </footer>
 
 
+    <section class="modal js-modal">
+      <h1 class="visually-hidden">Vet clinic - Авторизация, Задать вопрос</h1>
+
+      <div class="modal-dialog">
+        <button class="js-close-modal-button" type="button"></button>
+
+        <div class="modal-dialog__wrapper">
+          <div class="modal__autorisation">
+            <h2 class="autorisation-title">Авторизация:</h2>
+            <a href="#" class="autorisation-link google-link">Войти через Google</a>
+            <a href="#" class="autorisation-link facebook-link">Войти через Facebook</a>
+          </div>
+          <div class="modal__form-section">
+            <h2 class="form-section__head">Задать вопрос</h2>
+
+            <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+              <div class="input-group">
+                <input class="field form-field modal__form-field" type="text" name="name" placeholder="Ваше имя" aria-label="Ваше имя">
+                <textarea class="field textarea-field modal__form-field" name="questions" id="questions-input" rows="10" placeholder="Опишите Ваш вопрос." spellcheck="false"></textarea>
+                <button class="button form__button modal-form__button" type="submit">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
 
 
+<script src="./js/main.js"></script>
   </body>
   </html>
