@@ -189,7 +189,7 @@ img {
   margin-left: 9px;
 }
 
-.header__top-date{
+.header__top-date__box{
   display: flex;
   align-items: center;
 }
@@ -197,8 +197,6 @@ img {
   margin-left: 17px;
 }
 .header__top-date b{
-  font-style: normal;
-  font-weight: bold;
   font-size: 14px;
   line-height: 18px;
   color: var(--color-black);
@@ -212,7 +210,7 @@ img {
   line-height: 18px;
   color: var(--color-black);
 }
-.date-first::before{
+.header__top-date__box::before{
   content: "";
   display: block;
   width: 13px;
@@ -220,8 +218,9 @@ img {
   background-image: url("../img/schedule.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  margin-right: 9px;
+  margin-right: 7px;
   margin-left: 98px;
+  flex-shrink: 0;
 }
 
 /* HEADER_BOTTOM */
@@ -1057,29 +1056,9 @@ input{
 .footer__date-box{
   margin-left: 127px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
 }
 
-.footer__date {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
-  display: flex;
-  color: var(--color-primary-black);
-  display: flex;
-  align-items: center;
-
-}
-
-.footer__date span{
-  font-weight: 700;
-  margin-right: 5px;
-}
-
-
-
-.icon-date::before {
+.footer__date-box::before {
   content: "";
   display: block;
   width: 16px;
@@ -1089,7 +1068,16 @@ input{
   background-repeat: no-repeat;
 }
 
+.footer__date {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-primary-black);
+ }
 
+.footer__date b{
+  margin-right: 5px;
+}
 
 .footer__adress{
   width: 157px;
