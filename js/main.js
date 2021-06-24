@@ -60,3 +60,20 @@ elsTabToggle.forEach(toggle => {
     toggle.closest('.tab').classList.toggle('tab--active');
   })
 })
+
+
+// article
+
+elsArticleITem  = document.querySelectorAll('.article-card');
+elsArticleLink = document.querySelectorAll('.article-card__link');
+
+elsArticleLink.forEach(function (link) {
+  link.addEventListener('click',function (evt) {
+    evt.preventDefault();
+    elsArticleITem.forEach(function (item) {
+      item.classList.remove('article-card--open');
+
+    })
+    link.closest('.article-card').classList.add('article-card--open');
+  })
+})
